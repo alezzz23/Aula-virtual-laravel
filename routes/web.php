@@ -135,9 +135,20 @@ Route::middleware('auth')->group(function () {
 
     // Boleta de notas
     Route::get('/usuarios/{usuario}/boleta', [NotaController::class, 'boleta'])->name('usuarios.boleta');
+    
+    // Certificado de notas
+    Route::get('/usuarios/{usuario}/certificado', [NotaController::class, 'certificado'])->name('usuarios.certificado');
 
     // Reporte de asistencia por alumno
     Route::get('/usuarios/{usuario}/asistencia', [AsistenciaController::class, 'reportePorAlumno'])->name('usuarios.asistencia');
+    
+    // Reportes adicionales de asistencia
+    Route::get('/asistencia/total', [AsistenciaController::class, 'reporteTotal'])->name('asistencia.total');
+    Route::get('/asistencia/pases', [AsistenciaController::class, 'reportePases'])->name('asistencia.pases');
+    
+    // Configuración personal del usuario
+    Route::get('/configuracion', [UsuarioController::class, 'configuracion'])->name('usuarios.configuracion');
+    Route::put('/configuracion', [UsuarioController::class, 'actualizarConfiguracion'])->name('usuarios.configuracion.update');
 
     // Enviar tareas (estudiantes con permiso)
     Route::post('/tareas/enviar', [TareaController::class, 'enviarTarea'])->name('tareas.enviar')
