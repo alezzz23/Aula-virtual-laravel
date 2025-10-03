@@ -42,5 +42,11 @@ class Curso extends Model
     {
         return $this->hasMany(ProfGuia::class, 'curso');
     }
+
+    // Alias para compatibilidad con vistas
+    public function alumnos()
+    {
+        return $this->usuarios()->where('idRol', 3);
+    }
 }
 

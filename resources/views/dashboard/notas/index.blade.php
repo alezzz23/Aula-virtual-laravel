@@ -19,7 +19,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $curso->seccion }}</h5>
                                 <p class="card-text text-muted">
-                                    <i class="fas fa-users"></i> {{ $curso->alumnos->count() }} estudiantes<br>
+                                    <i class="fas fa-users"></i> {{ $curso->alumnos()->count() }} estudiantes<br>
                                     <i class="fas fa-book"></i> {{ $curso->materias->count() }} materias
                                 </p>
                                 <a href="{{ route('notas.curso', $curso) }}" class="btn btn-primary btn-sm">

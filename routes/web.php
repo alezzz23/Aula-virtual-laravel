@@ -51,7 +51,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('cursos', CursoController::class);
         Route::get('/cursos/{curso}/alumnos', [CursoController::class, 'alumnos'])->name('cursos.alumnos');
         Route::post('/cursos/{curso}/profesor-guia', [CursoController::class, 'asignarProfesorGuia'])->name('cursos.asignar-profesor-guia');
-        Route::delete('/prof-guia/{profGuia}', [CursoController::class, 'eliminarProfesorGuia'])->name('prof-guia.destroy');
+        Route::delete('/prof-guia/{profGuia}', [CursoController::class, 'eliminarProfesorGuia'])->name('cursos.eliminar-profesor-guia');
 
         // Materias
         Route::resource('materias', MateriaController::class);

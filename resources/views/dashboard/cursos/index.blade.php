@@ -39,11 +39,11 @@
                             <tr>
                                 <td><strong>{{ $curso->seccion }}</strong></td>
                                 <td>{{ $curso->materias->count() }}</td>
-                                <td>{{ $curso->alumnos->count() }}</td>
+                                <td>{{ $curso->alumnos()->count() }}</td>
                                 <td>
                                     @if($curso->profesoresGuia->count() > 0)
                                         @foreach($curso->profesoresGuia as $profGuia)
-                                            <span class="badge bg-success">{{ $profGuia->profesorGuia->namefull ?? '' }}</span>
+                                            <span class="badge bg-success">{{ $profGuia->usuario->namefull ?? $profGuia->usuario->usuario }}</span>
                                         @endforeach
                                     @else
                                         <span class="text-muted">Sin asignar</span>
@@ -123,8 +123,8 @@
                                                         <ul class="mb-0 mt-2">
                                                             @foreach($curso->profesoresGuia as $profGuia)
                                                                 <li>
-                                                                    {{ $profGuia->profesorGuia->namefull ?? '' }}
-                                                                    <form action="{{ route('prof-guia.destroy', $profGuia) }}" method="POST" class="d-inline">
+                                                                    {{ $profGuia->usuario->namefull ?? $profGuia->usuario->usuario }}
+                                                                    <form action="{{ route('cursos.eliminar-profesor-guia', $profGuia) }}" method="POST" class="d-inline">
                                                                         @csrf
                                                                         @method('DELETE')
                                                                         <button type="submit" class="btn btn-sm btn-danger btn-sm">

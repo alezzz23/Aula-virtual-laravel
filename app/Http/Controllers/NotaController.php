@@ -13,7 +13,7 @@ class NotaController extends Controller
 {
     public function index()
     {
-        $cursos = Curso::with('materias')->get();
+        $cursos = Curso::with(['materias', 'usuarios'])->get();
         $periodos = PeriodoClase::all();
 
         return view('dashboard.notas.index', compact('cursos', 'periodos'));

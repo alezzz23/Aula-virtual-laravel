@@ -11,8 +11,9 @@ class CursoController extends Controller
 {
     public function index()
     {
-        $cursos = Curso::with('profesoresGuia.usuario')->get();
-        return view('dashboard.cursos.index', compact('cursos'));
+        $cursos = Curso::with(['materias', 'usuarios', 'profesoresGuia.usuario'])->get();
+        $profesores = Usuario::where('idRol', 2)->get();
+        return view('dashboard.cursos.index', compact('cursos', 'profesores'));
     }
 
     public function create()
