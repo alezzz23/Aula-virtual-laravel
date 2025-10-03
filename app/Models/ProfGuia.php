@@ -14,9 +14,9 @@ class ProfGuia extends Model
         'curso',
     ];
 
-    public function usuario(): BelongsTo
+    public function profesor(): BelongsTo
     {
-        return $this->belongsTo(Usuario::class, 'usuario');
+        return $this->belongsTo(Usuario::class, 'usuario', 'id');
     }
 
     public function curso(): BelongsTo

@@ -43,7 +43,7 @@
                                 <td>
                                     @if($curso->profesoresGuia->count() > 0)
                                         @foreach($curso->profesoresGuia as $profGuia)
-                                            <span class="badge bg-success">{{ $profGuia->usuario->namefull ?? $profGuia->usuario->usuario }}</span>
+                                            <span class="badge bg-success">{{ $profGuia->profesor->namefull ?? $profGuia->profesor->usuario }}</span>
                                         @endforeach
                                     @else
                                         <span class="text-muted">Sin asignar</span>
@@ -123,7 +123,7 @@
                                                         <ul class="mb-0 mt-2">
                                                             @foreach($curso->profesoresGuia as $profGuia)
                                                                 <li>
-                                                                    {{ $profGuia->usuario->namefull ?? $profGuia->usuario->usuario }}
+                                                                    {{ $profGuia->profesor->namefull ?? $profGuia->profesor->usuario }}
                                                                     <form action="{{ route('cursos.eliminar-profesor-guia', $profGuia) }}" method="POST" class="d-inline">
                                                                         @csrf
                                                                         @method('DELETE')
