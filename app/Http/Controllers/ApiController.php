@@ -31,7 +31,7 @@ class ApiController extends Controller
                 'context' => 'nullable|string'
             ]);
 
-            $model = config('services.openrouter.default_model', 'Qwen3 235B A22B');
+            $model = config('services.openrouter.default_model', 'qwen/qwen-2.5-72b-instruct:free');
             $message = $request->input('message');
             $userId = $request->input('user_id');
             $context = $request->input('context', 'Eres un asistente educativo del Aula Virtual. Ayuda a estudiantes y profesores con preguntas académicas.');
@@ -117,7 +117,7 @@ class ApiController extends Controller
                 'max_tokens' => 'nullable|integer|min:1|max:4000'
             ]);
 
-            $model = config('services.openrouter.default_model', 'Qwen3 235B A22B');
+            $model = config('services.openrouter.default_model', 'qwen/qwen-2.5-72b-instruct:free');
             $prompt = $request->input('prompt');
             $maxTokens = $request->input('max_tokens', 500);
 
@@ -193,7 +193,7 @@ class ApiController extends Controller
                 'user_id' => 'required|integer|exists:usuarios,id'
             ]);
 
-            $model = config('services.openrouter.default_model', 'Qwen3 235B A22B');
+            $model = config('services.openrouter.default_model', 'qwen/qwen-2.5-72b-instruct:free');
             $message = $request->input('message');
             $userId = $request->input('user_id');
 
