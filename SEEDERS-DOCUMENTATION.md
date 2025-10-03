@@ -78,20 +78,20 @@ php artisan migrate:fresh --seed
 ## 📊 Datos de Prueba Incluidos
 
 ### Usuarios de Prueba
-- **Admin:** usuario: `Maxon`, password: `password`
-- **Profesor:** usuario: `German Vergara`, password: `password`
-- **Estudiante:** usuario: `Deiner Montes de Oca`, password: `password`
+- **Admin:** usuario: `Maxon`, password: `password` (ID: 1)
+- **Profesor:** usuario: `German Vergara`, password: `password` (ID: 9)
+- **Estudiante:** usuario: `Deiner Montes de Oca`, password: `password` (ID: 4)
 
-### Cursos
-- 1er Año A, 1er Año B
-- 2do Año A, 2do Año B
-- 3er Año A, 3er Año B
-- 4to Año A, 4to Año B
-- 5to Año U, 6to Año U
+### Cursos (IDs: 1-10)
+- 1er Año A (ID: 1), 1er Año B (ID: 2)
+- 2do Año A (ID: 3), 2do Año B (ID: 4)
+- 3er Año A (ID: 5), 3er Año B (ID: 6)
+- 4to Año A (ID: 7), 4to Año B (ID: 8)
+- 5to Año U (ID: 9), 6to Año U (ID: 10)
 
-### Materias por Curso
-- **5to Año U:** Castellano, Informática, Prácticas de oficina, Mantenimiento, Programación
-- **6to Año U:** Estructura de Datos, Sistemas Operativos, Proyecto, Programación II
+### Materias por Curso (IDs: 1-9)
+- **5to Año U (ID: 9):** Castellano (ID: 1), Informática (ID: 2), Prácticas de oficina (ID: 3), Mantenimiento (ID: 4), Programación (ID: 5)
+- **6to Año U (ID: 10):** Estructura de Datos (ID: 6), Sistemas Operativos (ID: 7), Proyecto (ID: 8), Programación II (ID: 9)
 
 ## 🔧 Orden de Ejecución
 
