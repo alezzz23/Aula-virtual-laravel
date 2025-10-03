@@ -229,3 +229,4 @@ Sistema en producción. Contactar al administrador para cambios.
 **Versión:** 1.0.0  
 **Laravel:** 12.32.5  
 **Fecha:** Octubre 2025
+# Configuración Git específica del proyecto
