@@ -23,7 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::prefix('openrouter')->group(function () {
     Route::post('/chat', [ApiController::class, 'chat'])->name('api.openrouter.chat');
     Route::post('/completion', [ApiController::class, 'completion'])->name('api.openrouter.completion');
-    Route::get('/models', [ApiController::class, 'getModels'])->name('api.openrouter.models');
     Route::post('/stream', [ApiController::class, 'streamChat'])->name('api.openrouter.stream');
 });
 

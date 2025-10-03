@@ -9,13 +9,9 @@
             <i class="fas fa-robot"></i> Chat IA - Asistente Educativo
         </h1>
         <div class="d-flex gap-2">
-            <select id="modelSelect" class="form-select" style="width: auto;">
-                <option value="meta-llama/llama-3.1-8b-instruct:free">Llama 3.1 8B (Gratis)</option>
-                <option value="meta-llama/llama-3.1-70b-instruct">Llama 3.1 70B</option>
-                <option value="openai/gpt-3.5-turbo">GPT-3.5 Turbo</option>
-                <option value="openai/gpt-4">GPT-4</option>
-                <option value="anthropic/claude-3-haiku">Claude 3 Haiku</option>
-            </select>
+            <span class="badge bg-info fs-6">
+                <i class="fas fa-brain"></i> Qwen3 235B A22B
+            </span>
             <button id="clearChat" class="btn btn-outline-danger">
                 <i class="fas fa-trash"></i> Limpiar Chat
             </button>
@@ -106,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const messageInput = document.getElementById('messageInput');
     const sendButton = document.getElementById('sendButton');
     const clearChatButton = document.getElementById('clearChat');
-    const modelSelect = document.getElementById('modelSelect');
     const suggestionButtons = document.querySelectorAll('.suggestion-btn');
 
     let isLoading = false;
@@ -118,8 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function sendMessage() {
         const message = messageInput.value.trim();
         if (!message || isLoading) return;
-
-        const selectedModel = modelSelect.value;
         
         // Agregar mensaje del usuario al chat
         addMessageToChat('user', message);
@@ -137,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             body: JSON.stringify({
                 message: message,
-                model: selectedModel,
                 user_id: {{ auth()->user()->id }},
                 context: 'Eres un asistente educativo del Aula Virtual. Ayuda a estudiantes y profesores con preguntas académicas, explicaciones de temas, técnicas de estudio, y cualquier consulta relacionada con la educación.'
             })

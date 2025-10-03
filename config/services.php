@@ -38,7 +38,7 @@ return [
     'openrouter' => [
         'api_key' => env('OPENROUTER_API_KEY'),
         'base_url' => env('OPENROUTER_BASE_URL', 'https://openrouter.ai/api/v1'),
-        'default_model' => env('OPENROUTER_DEFAULT_MODEL', 'meta-llama/llama-3.1-8b-instruct:free'),
+        'default_model' => env('OPENROUTER_MODEL', 'Qwen3 235B A22B'),
     ],
 
 ];

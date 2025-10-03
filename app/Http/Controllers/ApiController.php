@@ -27,12 +27,11 @@ class ApiController extends Controller
         try {
             $request->validate([
                 'message' => 'required|string|max:4000',
-                'model' => 'nullable|string',
                 'user_id' => 'required|integer|exists:usuarios,id',
                 'context' => 'nullable|string'
             ]);
 
-            $model = $request->input('model', 'meta-llama/llama-3.1-8b-instruct:free');
+            $model = config('services.openrouter.default_model', 'Qwen3 235B A22B');
             $message = $request->input('message');
             $userId = $request->input('user_id');
             $context = $request->input('context', 'Eres un asistente educativo del Aula Virtual. Ayuda a estudiantes y profesores con preguntas académicas.');
@@ -115,11 +114,10 @@ class ApiController extends Controller
         try {
             $request->validate([
                 'prompt' => 'required|string|max:4000',
-                'model' => 'nullable|string',
                 'max_tokens' => 'nullable|integer|min:1|max:4000'
             ]);
 
-            $model = $request->input('model', 'meta-llama/llama-3.1-8b-instruct:free');
+            $model = config('services.openrouter.default_model', 'Qwen3 235B A22B');
             $prompt = $request->input('prompt');
             $maxTokens = $request->input('max_tokens', 500);
 
@@ -192,11 +190,10 @@ class ApiController extends Controller
         try {
             $request->validate([
                 'message' => 'required|string|max:4000',
-                'model' => 'nullable|string',
                 'user_id' => 'required|integer|exists:usuarios,id'
             ]);
 
-            $model = $request->input('model', 'meta-llama/llama-3.1-8b-instruct:free');
+            $model = config('services.openrouter.default_model', 'Qwen3 235B A22B');
             $message = $request->input('message');
             $userId = $request->input('user_id');
 
