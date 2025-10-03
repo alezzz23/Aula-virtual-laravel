@@ -10,7 +10,7 @@
         </h1>
         <div class="d-flex gap-2">
             <span class="badge bg-info fs-6">
-                <i class="fas fa-brain"></i> Qwen3 235B A22B
+                <i class="fas fa-brain"></i> Qwen2.5 72B (Gratis)
             </span>
             <button id="clearChat" class="btn btn-outline-danger">
                 <i class="fas fa-trash"></i> Limpiar Chat
