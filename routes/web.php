@@ -150,6 +150,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/configuracion', [UsuarioController::class, 'configuracion'])->name('usuarios.configuracion');
     Route::put('/configuracion', [UsuarioController::class, 'actualizarConfiguracion'])->name('usuarios.configuracion.update');
 
+    // Chat IA
+    Route::get('/chat', function () {
+        return view('dashboard.chat.index');
+    })->name('chat.index');
+
     // Enviar tareas (estudiantes con permiso)
     Route::post('/tareas/enviar', [TareaController::class, 'enviarTarea'])->name('tareas.enviar')
         ->middleware(\App\Http\Middleware\CheckTareaPermission::class);
