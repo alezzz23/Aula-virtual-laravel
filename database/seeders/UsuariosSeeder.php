@@ -1,0 +1,167 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\Usuario;
+use Illuminate\Support\Facades\Hash;
+
+class UsuariosSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $usuarios = [
+            [
+                'usuario' => 'Maxon',
+                'namefull' => null,
+                'cedula' => '31656626',
+                'sexo' => null,
+                'fecha_nacimiento' => null,
+                'password' => Hash::make('password'),
+                'correo' => 'maxondmdo@gmail.co',
+                'telefono' => '04242022924',
+                'idRol' => 1,
+                'seccion' => null,
+                'enviar_tareas' => 0,
+                'ver_notas' => 0,
+                'estado' => 'Activo',
+                'guia' => 0,
+            ],
+            [
+                'usuario' => 'Deiner Montes de Oca',
+                'namefull' => 'Montes de Oca Peña Deiner Christyan',
+                'cedula' => '31656626',
+                'sexo' => 'M',
+                'fecha_nacimiento' => '2007-03-04',
+                'password' => Hash::make('password'),
+                'correo' => 'maxondmdo@gmail.com',
+                'telefono' => '04242022924',
+                'idRol' => 3,
+                'seccion' => 60,
+                'enviar_tareas' => 1,
+                'ver_notas' => 1,
+                'estado' => 'Activo',
+                'guia' => 0,
+            ],
+            [
+                'usuario' => 'Elio Martinez',
+                'namefull' => 'Martinez Torres Elio David',
+                'cedula' => '31656622',
+                'sexo' => 'M',
+                'fecha_nacimiento' => '2007-04-09',
+                'password' => Hash::make('password'),
+                'correo' => 'elio@gmail.com',
+                'telefono' => '04123459310',
+                'idRol' => 3,
+                'seccion' => 59,
+                'enviar_tareas' => 1,
+                'ver_notas' => 1,
+                'estado' => 'Activo',
+                'guia' => 0,
+            ],
+            [
+                'usuario' => 'José Pérez',
+                'namefull' => 'Peréz Peña José Anthonio',
+                'cedula' => '12345',
+                'sexo' => 'M',
+                'fecha_nacimiento' => '2007-02-14',
+                'password' => Hash::make('password'),
+                'correo' => 'jose@gmail.com',
+                'telefono' => '04125469223',
+                'idRol' => 3,
+                'seccion' => 60,
+                'enviar_tareas' => 0,
+                'ver_notas' => 0,
+                'estado' => 'Activo',
+                'guia' => 0,
+            ],
+            [
+                'usuario' => 'Alejandro Sojo',
+                'namefull' => 'Sojo Alejandro',
+                'cedula' => '12345',
+                'sexo' => 'M',
+                'fecha_nacimiento' => null,
+                'password' => Hash::make('password'),
+                'correo' => 'ale@gmail.com',
+                'telefono' => '0426745924',
+                'idRol' => 3,
+                'seccion' => 59,
+                'enviar_tareas' => 0,
+                'ver_notas' => 0,
+                'estado' => 'Activo',
+                'guia' => 0,
+            ],
+            [
+                'usuario' => 'Caridad Pérez',
+                'namefull' => null,
+                'cedula' => '12345',
+                'sexo' => null,
+                'fecha_nacimiento' => null,
+                'password' => Hash::make('password'),
+                'correo' => 'caridad@gmail.com',
+                'telefono' => '04123459310',
+                'idRol' => 2,
+                'seccion' => null,
+                'enviar_tareas' => 0,
+                'ver_notas' => 0,
+                'estado' => 'Activo',
+                'guia' => 1,
+            ],
+            [
+                'usuario' => 'German Vergara',
+                'namefull' => null,
+                'cedula' => '12345',
+                'sexo' => null,
+                'fecha_nacimiento' => null,
+                'password' => Hash::make('password'),
+                'correo' => 'german@gmail.com',
+                'telefono' => '02125639351',
+                'idRol' => 2,
+                'seccion' => null,
+                'enviar_tareas' => 0,
+                'ver_notas' => 0,
+                'estado' => 'Activo',
+                'guia' => 1,
+            ],
+            [
+                'usuario' => 'Marjorie Amaro',
+                'namefull' => null,
+                'cedula' => '12345',
+                'sexo' => null,
+                'fecha_nacimiento' => null,
+                'password' => Hash::make('password'),
+                'correo' => 'marjorie@gmail.com',
+                'telefono' => '04123371310',
+                'idRol' => 2,
+                'seccion' => null,
+                'enviar_tareas' => 0,
+                'ver_notas' => 0,
+                'estado' => 'Activo',
+                'guia' => 1,
+            ],
+            [
+                'usuario' => 'Jenny Patiño',
+                'namefull' => null,
+                'cedula' => '12345',
+                'sexo' => null,
+                'fecha_nacimiento' => null,
+                'password' => Hash::make('password'),
+                'correo' => 'jenni@gmail.com',
+                'telefono' => '04246719386',
+                'idRol' => 2,
+                'seccion' => null,
+                'enviar_tareas' => 0,
+                'ver_notas' => 0,
+                'estado' => 'Activo',
+                'guia' => 1,
+            ],
+        ];
+
+        foreach ($usuarios as $usuario) {
+            Usuario::create($usuario);
+        }
+    }
+}
