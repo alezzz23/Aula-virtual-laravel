@@ -14,20 +14,20 @@ class ProfGuiaSeeder extends Seeder
     {
         $profGuia = [
             [
-                'usuario' => 163,
-                'curso' => 60,
+                'usuario' => 8, // Marjorie Amaro
+                'curso' => 10, // 6to Año U
             ],
             [
-                'usuario' => 164,
-                'curso' => 58,
+                'usuario' => 9, // Jenny Patiño
+                'curso' => 8, // 4to Año B
             ],
             [
-                'usuario' => 164,
-                'curso' => 57,
+                'usuario' => 9, // Jenny Patiño
+                'curso' => 7, // 4to Año A
             ],
             [
-                'usuario' => 162,
-                'curso' => 59,
+                'usuario' => 7, // German Vergara
+                'curso' => 9, // 5to Año U
             ],
         ];
 

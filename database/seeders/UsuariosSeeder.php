@@ -40,7 +40,7 @@ class UsuariosSeeder extends Seeder
                 'correo' => 'maxondmdo@gmail.com',
                 'telefono' => '04242022924',
                 'idRol' => 3,
-                'seccion' => 60,
+                'seccion' => 10, // 6to Año U
                 'enviar_tareas' => 1,
                 'ver_notas' => 1,
                 'estado' => 'Activo',
@@ -56,7 +56,7 @@ class UsuariosSeeder extends Seeder
                 'correo' => 'elio@gmail.com',
                 'telefono' => '04123459310',
                 'idRol' => 3,
-                'seccion' => 59,
+                'seccion' => 9, // 5to Año U
                 'enviar_tareas' => 1,
                 'ver_notas' => 1,
                 'estado' => 'Activo',
@@ -72,7 +72,7 @@ class UsuariosSeeder extends Seeder
                 'correo' => 'jose@gmail.com',
                 'telefono' => '04125469223',
                 'idRol' => 3,
-                'seccion' => 60,
+                'seccion' => 10, // 6to Año U
                 'enviar_tareas' => 0,
                 'ver_notas' => 0,
                 'estado' => 'Activo',
@@ -88,7 +88,7 @@ class UsuariosSeeder extends Seeder
                 'correo' => 'ale@gmail.com',
                 'telefono' => '0426745924',
                 'idRol' => 3,
-                'seccion' => 59,
+                'seccion' => 9, // 5to Año U
                 'enviar_tareas' => 0,
                 'ver_notas' => 0,
                 'estado' => 'Activo',

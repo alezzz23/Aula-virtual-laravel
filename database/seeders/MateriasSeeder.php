@@ -15,56 +15,56 @@ class MateriasSeeder extends Seeder
         $materias = [
             [
                 'materia' => 'Castellano',
-                'profesor' => 161,
-                'curso' => 59,
+                'profesor' => 6, // Caridad Pérez
+                'curso' => 9, // 5to Año U
                 'estado' => 1,
             ],
             [
                 'materia' => 'Informática',
-                'profesor' => 162,
-                'curso' => 59,
+                'profesor' => 7, // German Vergara
+                'curso' => 9, // 5to Año U
                 'estado' => 1,
             ],
             [
                 'materia' => 'Practicas de oficina',
-                'profesor' => 164,
-                'curso' => 59,
+                'profesor' => 9, // Jenny Patiño
+                'curso' => 9, // 5to Año U
                 'estado' => 1,
             ],
             [
                 'materia' => 'Mantenimiento',
-                'profesor' => 162,
-                'curso' => 59,
+                'profesor' => 7, // German Vergara
+                'curso' => 9, // 5to Año U
                 'estado' => 1,
             ],
             [
                 'materia' => 'Programación',
-                'profesor' => 162,
-                'curso' => 59,
+                'profesor' => 7, // German Vergara
+                'curso' => 9, // 5to Año U
                 'estado' => 1,
             ],
             [
                 'materia' => 'Estructura de Datos',
-                'profesor' => 163,
-                'curso' => 60,
+                'profesor' => 8, // Marjorie Amaro
+                'curso' => 10, // 6to Año U
                 'estado' => 1,
             ],
             [
                 'materia' => 'Sistemas Operativos',
-                'profesor' => 163,
-                'curso' => 60,
+                'profesor' => 8, // Marjorie Amaro
+                'curso' => 10, // 6to Año U
                 'estado' => 1,
             ],
             [
                 'materia' => 'Proyecto',
-                'profesor' => 163,
-                'curso' => 60,
+                'profesor' => 8, // Marjorie Amaro
+                'curso' => 10, // 6to Año U
                 'estado' => 1,
             ],
             [
                 'materia' => 'Programación II',
-                'profesor' => 162,
-                'curso' => 60,
+                'profesor' => 7, // German Vergara
+                'curso' => 10, // 6to Año U
                 'estado' => 1,
             ],
         ];

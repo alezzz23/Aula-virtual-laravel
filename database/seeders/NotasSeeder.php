@@ -14,7 +14,7 @@ class NotasSeeder extends Seeder
     {
         $notas = [
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '1er Lapso',
                 '1era' => 15,
                 '2da' => 20,
@@ -22,12 +22,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 18,
                 'adicionales' => 0,
                 'total' => 18,
-                'idMa' => 114,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 2, // Informática
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '1er Lapso',
                 '1era' => 13,
                 '2da' => 17,
@@ -35,12 +35,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 20,
                 'adicionales' => 0,
                 'total' => 16,
-                'idMa' => 116,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 4, // Mantenimiento
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '1er Lapso',
                 '1era' => 16,
                 '2da' => 20,
@@ -48,12 +48,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 20,
                 'adicionales' => 0,
                 'total' => 18,
-                'idMa' => 117,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 5, // Programación
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '2do Lapso',
                 '1era' => 17,
                 '2da' => 10,
@@ -61,12 +61,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 17,
                 'adicionales' => 0,
                 'total' => 15,
-                'idMa' => 114,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 2, // Informática
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '2do Lapso',
                 '1era' => 13,
                 '2da' => 19,
@@ -74,12 +74,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 15,
                 'adicionales' => 0,
                 'total' => 16,
-                'idMa' => 116,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 4, // Mantenimiento
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '2do Lapso',
                 '1era' => 18,
                 '2da' => 13,
@@ -87,12 +87,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 20,
                 'adicionales' => 0,
                 'total' => 16,
-                'idMa' => 117,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 5, // Programación
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '3er Lapso',
                 '1era' => 20,
                 '2da' => 15,
@@ -100,12 +100,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 14,
                 'adicionales' => 0,
                 'total' => 17,
-                'idMa' => 114,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 2, // Informática
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '3er Lapso',
                 '1era' => 11,
                 '2da' => 17,
@@ -113,12 +113,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 20,
                 'adicionales' => 0,
                 'total' => 17,
-                'idMa' => 116,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 4, // Mantenimiento
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '3er Lapso',
                 '1era' => 12,
                 '2da' => 12,
@@ -126,12 +126,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 14,
                 'adicionales' => 0,
                 'total' => 14,
-                'idMa' => 117,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 5, // Programación
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '1er Lapso',
                 '1era' => 16,
                 '2da' => 11,
@@ -139,12 +139,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 14,
                 'adicionales' => 0,
                 'total' => 14,
-                'idMa' => 113,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 1, // Castellano
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '1er Lapso',
                 '1era' => 12,
                 '2da' => 10,
@@ -152,12 +152,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 13,
                 'adicionales' => 0,
                 'total' => 12,
-                'idMa' => 115,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 3, // Prácticas de oficina
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '2do Lapso',
                 '1era' => 11,
                 '2da' => 11,
@@ -165,12 +165,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 13,
                 'adicionales' => 0,
                 'total' => 11,
-                'idMa' => 113,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 1, // Castellano
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '2do Lapso',
                 '1era' => 8,
                 '2da' => 12,
@@ -178,12 +178,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 20,
                 'adicionales' => 0,
                 'total' => 11,
-                'idMa' => 115,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 3, // Prácticas de oficina
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '3er Lapso',
                 '1era' => 10,
                 '2da' => 10,
@@ -191,12 +191,12 @@ class NotasSeeder extends Seeder
                 '4ta' => 14,
                 'adicionales' => 0,
                 'total' => 12,
-                'idMa' => 113,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 1, // Castellano
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
             [
-                'alumno' => 157,
+                'alumno' => 4, // Deiner Montes de Oca
                 'lapso' => '3er Lapso',
                 '1era' => 10,
                 '2da' => 13,
@@ -204,9 +204,9 @@ class NotasSeeder extends Seeder
                 '4ta' => 20,
                 'adicionales' => 0,
                 'total' => 14,
-                'idMa' => 115,
-                'curso' => 59,
-                'periodo' => 16,
+                'idMa' => 3, // Prácticas de oficina
+                'curso' => 9, // 5to Año U
+                'periodo' => 1, // 2024-2025
             ],
         ];
 
