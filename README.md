@@ -230,3 +230,4 @@ Sistema en producción. Contactar al administrador para cambios.
 **Laravel:** 12.32.5  
 **Fecha:** Octubre 2025
 # Configuración Git específica del proyecto
+# Prueba de configuración Git
